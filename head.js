@@ -7,11 +7,12 @@ const assertEqual = function(actual, expected) {
 };
 
 const head = function(arr) {
-  if (arr.length) {
-    if (arr.length === 1) {
-      return arr.join("");
+  let myArr = [...arr]
+  if (myArr.length) {
+    if (myArr.length === 1) {
+      return myArr.join("");
     } else {
-      return arr.shift();
+      return myArr.shift();
     }
   } else {
     return undefined;
