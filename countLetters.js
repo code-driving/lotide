@@ -27,5 +27,5 @@ const countLetters = function(sentence) {
 };
 // console.log(countLetters('LHL'));
 // console.log(countLetters('Lighthouse Labs is awesome'));
-assertEqual(countLetters('LHL'), { L: 2, H: 1 });
+
 
