@@ -10,15 +10,14 @@ const letterPositions = require("./letterPositions");
 const map = require("./map");
 
 module.exports = {
-  head: head,
-  tail: tail,
-  middle: middle,
-  isEven: isEven,
-  countLetters: countLetters,
-  countOnly: countOnly,
-  findKey: findKey,
-  findKeyByValue: findKeyByValue,
-  flatten: flatten,
-  letterPositions: letterPositions,
-  map: map,
+  head,
+  tail,
+  middle,
+  isEven,
+  countLetters,
+  countOnly,
+  findKey,
+  findKeyByValue,
+  letterPositions,
+  map,
 };
