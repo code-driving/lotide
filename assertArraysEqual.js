@@ -15,17 +15,15 @@ const eqArrays = function (arr1, arr2) {
   return true;
 };
 
-const assertArraysEqual = function (arr1, arr2) {
+const assertArraysEqual = function (arr1, arr2, result) {
   const eqArray = eqArrays(arr1, arr2);
-  if (eqArray) {
+  if (eqArray == result) {
     console.log(`✅✅✅ Assertion passed: ${arr1} === ${arr2}`);
   } else {
     console.log(`🛑🛑🛑 Assertion failed: ${arr1} !== ${arr2}`);
   }
 };
 
-module.exports = { assertArraysEqual };
+module.exports = { eqArrays, assertArraysEqual };
 
-// console.log(assertArraysEqual([1, 2, 3], [1, 2, 3]))
-// console.log(assertArraysEqual(["1", "2", "3"], ["1", "2", "3"]))
-// console.log(assertArraysEqual([1, 2, 3], [3, 2, 1]))
+
