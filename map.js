@@ -1,3 +1,7 @@
+// const eqArrays = require("./eqArrays");
+// const assertArraysEqual = require("./assertArraysEqual");
+
+
 const eqArrays = function(arr1, arr2) {
   if (!Array.isArray(arr1) && !Array.isArray(arr2)) {
     return false;
@@ -36,3 +40,4 @@ const results = map(words, (word) => word[0]);
 console.log(results);
 
 assertArraysEqual(words, ["g", "c", "t", "m", "t"]);
+

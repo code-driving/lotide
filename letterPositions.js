@@ -1,3 +1,7 @@
+// const eqArrays = require("./eqArrays");
+// const assertArraysEqual = require("./assertArraysEqual");
+
+
 const eqArrays = function(arr1, arr2) {
   if (!Array.isArray(arr1) && !Array.isArray(arr2)) {
     return false;
@@ -35,9 +39,6 @@ const letterPositions = function(sentence) {
   return results;
 };
 
-console.log(letterPositions("lighthouse in the house"));
-
-
-
-assertArraysEqual(letterPositions("hello").e, [1]);
-assertArraysEqual(letterPositions("smile").s, [0]);
+// console.log(letterPositions("lighthouse in the house"));
+// assertArraysEqual(letterPositions("hello").e, [1]);
+// assertArraysEqual(letterPositions("smile").s, [0]);

@@ -1,3 +1,6 @@
+// const eqArray = require("./eqArrays");
+// const assertArraysEqual = require("./assertArraysEqual");
+
 const eqArrays = function(arr1, arr2) {
   if (!Array.isArray(arr1) && !Array.isArray(arr2)) {
     return false;
@@ -34,11 +37,8 @@ const flatten = function(arr) {
   return result;
 };
 
-// console.log(assertArraysEqual(flatten([[1, 2], 4, 5])));
-
-// const flatten = function(arr) {
-//   return flattenedArr = [].concat(...arr)
-// }
 // console.log(flatten([[1, 2], 4, 5]));
 // console.log(flatten([[1],2,[3, 4]]))
 // console.log(flatten([1, 2, [3, 4], 5, [6]]))
+
+assertArraysEqual(flatten[[1, 2], 3], [1, 2, 3])

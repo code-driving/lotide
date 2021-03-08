@@ -1,3 +1,5 @@
+// const assertEqual = require("./assertEqual");
+
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`✅✅✅ Assertion passed: ${actual} === ${expected}`);
@@ -23,5 +25,7 @@ const countLetters = function(sentence) {
   }
   return objOfLetters;
 };
-console.log(countLetters('LHL'));
-console.log(countLetters('Lighthouse Labs is awesome'));
+// console.log(countLetters('LHL'));
+// console.log(countLetters('Lighthouse Labs is awesome'));
+assertEqual(countLetters('LHL'), { L: 2, H: 1 });
+
