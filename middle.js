@@ -1,29 +1,4 @@
-// const eqArrays = require("./eqArrays");
-// const assertArraysEqual = require("./assertArraysEqual");
-
-const eqArrays = function(arr1, arr2) {
-  if (!Array.isArray(arr1) && !Array.isArray(arr2)) {
-    return false;
-  }
-  if (arr1.length !== arr2.length) {
-    return false;
-  }
-  for (let char of arr1) {
-    if (arr1[char] !== arr2[char]) {
-      return false;
-    }
-  }
-  return true;
-};
-
-const assertArraysEqual = function(arr1, arr2) {
-  const eqArray = eqArrays(arr1, arr2);
-  if (eqArray) {
-    console.log(`✅✅✅ Assertion passed: ${arr1} === ${arr2}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertion failed: ${arr1} !== ${arr2}`);
-  }
-};
+const { eqArrays, assertArraysEqual } = require("./assertArraysEqual");
 
 const isEven = function(num) {
   return num % 2 === 0 ? true : false;
@@ -44,9 +19,6 @@ const middle = function(arr) {
   return arrWithMiddleEl;
 };
 
-// console.log(middle([1])); // => []
-// console.log(middle([1, 2])); // => []
-// console.log(middle([1, 2, 3])); // => [2]
-// console.log(middle([1, 2, 3, 4, 5])); // => [3]
-// console.log(middle([1, 2, 3, 4])); // => [2, 3]
-// console.log(middle([1, 2, 3, 4, 5, 6])); // => [3, 4]
+module.exports = { isEven, middle };
+
+
