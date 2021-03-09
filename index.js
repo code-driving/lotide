@@ -18,6 +18,7 @@ module.exports = {
   countOnly,
   findKey,
   findKeyByValue,
+  flatten,
   letterPositions,
   map,
 };
